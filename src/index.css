@@ -1,0 +1,17 @@
+@import "tailwindcss"; /* Sirf ye aik line v4 ke liye kaafi hai */
+
+/* Aapki 3D animations niche rahegi */
+@keyframes auto-rotate {
+  from { transform: rotateY(0deg); }
+  to { transform: rotateY(360deg); }
+}
+
+.animate-auto-rotate {
+  animation: auto-rotate 25s linear infinite;
+  transform-style: preserve-3d;
+}
+
+body {
+  background-color: #030303;
+  color: white;
+}
