@@ -3,10 +3,9 @@ import { motion } from "framer-motion";
 import { Download, Menu } from "lucide-react";
 
 const Navbar = () => {
-  // Resume handle function (optional, direct link is also fine)
+  // Resume download hone par console mein message dikhane ke liye
   const handleDownload = () => {
-    // Ye line console mein check karne ke liye hai
-    console.log("Downloading Resume...");
+    console.log("Downloading Moazzam's Resume...");
   };
 
   return (
@@ -37,10 +36,12 @@ const Navbar = () => {
 
       {/* Action Buttons */}
       <div className="flex items-center gap-4">
-        {/* Functional Resume Button */}
+        {/* Updated Resume Button */}
         <a 
-          href="/resume.pdf" target="_blank" rel="noreferrer" // 👈 File ka path jo public folder mein hogi
-          download="Moazzam_Resume.pdf" // 👈 Download hone par file ka naam
+          href="/Profile.pdf" // 👈 Aapke public folder mein file ka naam "Profile.pdf" hai
+          target="_blank" 
+          rel="noreferrer" 
+          download="Moazzam_Resume.pdf" // 👈 User ko file is naam se download ho kar milegi
           className="hidden md:flex items-center gap-2 px-5 py-2.5 bg-white text-black text-[10px] font-bold uppercase rounded-xl hover:bg-blue-400 hover:text-white hover:scale-105 transition-all duration-300 shadow-[0_0_15px_rgba(255,255,255,0.1)] cursor-pointer"
           onClick={handleDownload}
         >

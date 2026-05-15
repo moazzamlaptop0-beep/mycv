@@ -47,15 +47,35 @@ const Footer = () => {
             <div className="space-y-4">
               <p className="text-[10px] font-mono text-white/20 uppercase tracking-[0.3em]">Social Systems</p>
               <div className="flex gap-4">
-                <a href="https://github.com/moazzamlaptop0-beep" target="_blank" rel="noreferrer" className="text-slate-400 hover:text-white transition-colors">
+                
+                {/* GitHub Link */}
+                <a 
+                  href="https://github.com/moazzamlaptop0-beep" 
+                  target="_blank" 
+                  rel="noreferrer" 
+                  className="text-slate-400 hover:text-white transition-colors"
+                >
                   <GithubIcon size={20} />
-                </a>
-                <a href="#" className="text-slate-400 hover:text-white transition-colors">
+                </a> {/* 👈 Yeh closing tag pehle missing tha */}
+
+                {/* LinkedIn Link */}
+                <a 
+                  href="https://www.linkedin.com/in/moazzam-ilyas-butt-27134840a" 
+                  target="_blank" 
+                  rel="noreferrer" 
+                  className="text-slate-400 hover:text-white transition-colors"
+                >
                   <LinkedinIcon size={20} />
                 </a>
-                <a href="mailto:moazzam.developer@gmail.com" className="text-slate-400 hover:text-white transition-colors">
+
+                {/* Email Link */}
+                <a 
+                  href="mailto:moazzam.developer@gmail.com" 
+                  className="text-slate-400 hover:text-white transition-colors"
+                >
                   <MailIcon size={20} />
                 </a>
+
               </div>
             </div>
           </div>
@@ -86,5 +106,5 @@ const Footer = () => {
     </footer>
   );
 };
-
+ 
 export default Footer;
